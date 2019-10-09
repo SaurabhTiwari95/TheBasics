@@ -31,6 +31,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ##  Import Project from GitHub to Stackblitz
     You can run any public repo on Github by providing the username + repo name like so:
 
-    ```stackblitz.com/github/{GH_USERNAME}/{REPO_NAME}```
+    ```
+    stackblitz.com/github/{GH_USERNAME}/{REPO_NAME}
+    ```
+    
     And you can also optionally specify a branch, tag, or commit:
-    ```.../github/{GH_USERNAME}/{REPO_NAME}/tree/{TAG|BRANCH|COMMIT}```
+    
+    ```
+    .../github/{GH_USERNAME}/{REPO_NAME}/tree/{TAG|BRANCH|COMMIT}
+    ```
