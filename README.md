@@ -1,6 +1,8 @@
 # TheBasics
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+This project was generated with 
+[Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+[Bootstrap] v3.4.1 (https://getbootstrap.com/)
 
 ## Development server
 
