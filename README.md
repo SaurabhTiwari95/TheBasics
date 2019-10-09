@@ -2,7 +2,7 @@
 
 This project was generated with 
 [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
-[Bootstrap] v3.4.1 (https://getbootstrap.com/)
+[Bootstrap](https://getbootstrap.com/)  v3.4.1 
 
 ## Development server
 
@@ -27,3 +27,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+##  Import Project from GitHub to Stackblitz
+    You can run any public repo on Github by providing the username + repo name like so:
+
+    ```stackblitz.com/github/{GH_USERNAME}/{REPO_NAME}```
+    And you can also optionally specify a branch, tag, or commit:
+    ```.../github/{GH_USERNAME}/{REPO_NAME}/tree/{TAG|BRANCH|COMMIT}```
