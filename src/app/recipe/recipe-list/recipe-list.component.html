@@ -19,7 +19,9 @@
     </a> -->
     <app-recipe-Item
      *ngFor="let recipeEl of recipe"
-     [recipe]="recipeEl">
+     [recipe]="recipeEl"
+     [recipeSelected]="onRecipeSelected(recipeEl)"
+     >
     <!--
       Here we are sucessfully passing down the data from recipe-List.component to recipe-Item.component by 
       using @Input() decorator[ Udemy || Lec-86 ]
