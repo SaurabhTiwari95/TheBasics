@@ -6,18 +6,33 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <a href="#" class="list-group-item clearfix" *ngFor="let recipe of recipe">
+    <!-- <a href="#" class="list-group-item clearfix" *ngFor="let recipe of recipe">
       <div class="pull-left">
         <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
         <p class="list-group-item-text">{{ recipe.description }}</p>
       </div>
       <span class="pull-right">
-        <!--here we can use both STRING INTERPOLATION & PROPERTY BINDING
-        src={{ recipe.imagePath }} this will also work-->
+        "here we can use both STRING INTERPOLATION & PROPERTY BINDING
+        src={{ recipe.imagePath }} this will also work"
         <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive" style="max-height:50px;">
       </span>
-    </a>
-    <app-recipe-Item></app-recipe-Item>
+    </a> -->
+    <app-recipe-Item
+     *ngFor="let recipeEl of recipe"
+     [recipe]="recipeEl">
+    <!--
+      Here we are sucessfully passing down the data from recipe-List.component to recipe-Item.component by 
+      using @Input() decorator[ Udemy || Lec-86 ]
+    -->
+    <!-- 
+      the [recipe] here is the recipe property in the recipeItem.Component.ts file
+      recipeEl=recipeElement
+      by doing this, the whole component is replicated for each recipe,
+      but now the issue is we don't have the recipe which we have to access,
+      inside the recipe-Item-component anymore,so we should probably add recipe  in the 
+      recipe.component.ts file 
+    -->
+    </app-recipe-Item>
   </div>
 </div>
 

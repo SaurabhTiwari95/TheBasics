@@ -1,9 +1,18 @@
-<app-header></app-header>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<!--  
+  $event is used here because we are interested in the data which we will recive from the featureSelected
+   -->
+<!-- $event refers to data which is anywhere between the quotation marks of the onSelect method,
+  In header.component.html file we have used "recipe" and "shopping-list" which is only specifying 
+  which data we want to pass in our own method -->
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipe></app-recipe>
-      <app-shopping-list></app-shopping-list>
+      <app-recipe *ngIf="loadedfeature === 'recipe'"></app-recipe>
+      <app-shopping-list *ngIf="loadedfeature !== 'recipe'"></app-shopping-list>
+      <!-- OR
+        <app-shopping-list *ngIf="loadedfeature === 'shopping-list'"></app-shopping-list>
+       -->
     </div>
   </div>
 </div>

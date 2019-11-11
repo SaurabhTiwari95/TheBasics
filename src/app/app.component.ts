@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TheBasics';
+  loadedfeature ="recipe"; //this shows which feature should be displayed recipe or the shopping-list
+  
+  onNavigate(feature:string){
+      this.loadedfeature = feature;
+  }
+
 }
