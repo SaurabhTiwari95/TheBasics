@@ -1,14 +1,13 @@
 <div class="row">
   <div class="col-md-5">
-    <app-recipe-list 
+    <app-recipe-list
       (recipeWasSelected)="SelectedRecipe = $event">
     </app-recipe-list>
   </div>
   <!--Two columns next to each other because we want recipe list and recipe detail next to each other-->
   <div class="col-md-7">
-    <app-recipe-detail 
-      *ngIf="SelectedRecipe; 
-      else infoText"
+    <app-recipe-detail
+      *ngIf="SelectedRecipe; else infoText"
       [recipe]="SelectedRecipe">
     </app-recipe-detail>
     <ng-template #infoText>

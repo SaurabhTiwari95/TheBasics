@@ -8,9 +8,10 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
+  
   recipe: Recipe[] = [
     new Recipe('A Test Recipe','This is a test recipe description','https://www.modernhoney.com/wp-content/uploads/2018/03/The-Best-Chicken-Marinade-Recipe.jpg'),
-    new Recipe('A Test Recipe','This is a test recipe description','https://www.modernhoney.com/wp-content/uploads/2018/03/The-Best-Chicken-Marinade-Recipe.jpg'),
+    new Recipe('Another Test Recipe','This is a test recipe description','https://www.modernhoney.com/wp-content/uploads/2018/03/The-Best-Chicken-Marinade-Recipe.jpg'),
   ];
   /*it is an empty array*/
   /*we should define how a recipe looks like for that we should create a model(recipe.model.ts)
