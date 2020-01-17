@@ -19,13 +19,13 @@ This project was generated with
     .../github/{GH_USERNAME}/{REPO_NAME}/tree/{TAG|BRANCH|COMMIT}
     ```
 #### Lecture 90
-  ***Understanding Directives***
-  **Attribute Directives**
+##### Understanding Directives
+###### Attribute Directives**
       ```
         - Looks like a normal attribute(possibly with databinding or event binding
         - Only affect/change the element they are added to
       ```
-    **Structural Directives**
+###### Structural Directives**
       ```
         - looks like a normal attribute but have a leading *(for desugaring)
         - Affect a wholle area in the DOM(elements get added/removed)
