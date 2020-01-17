@@ -30,4 +30,17 @@ This project was generated with
         - looks like a normal attribute but have a leading *(for desugaring)
         - Affect a wholle area in the DOM(elements get added/removed)
       ```
-      This
+      ```
+        - create a Folder
+        - create a file
+        - Name the file "file-name.directive.ts"
+        - export a class "file-nameDirective"
+        - now add @Directive which need to be imported from '@angular/core'
+        - pass an object to this decorator to configure this Directive
+        - Now, How do we Configure the directive ??
+              - the one thing our directive needs is a SELECTOR
+              because we need to place our directive in our template to attach them to elements so we need to have some way to give angular some instructions which is through the SELECTOR which need to be unique selector.
+              - selector : '[appFileName]
+              - we can inject the element the directive sits on into this directive(services SECTION it is an easy way to get other classes without instantiating on our own)
+              - we inject them by adding a CONSTRUCTOR(here we list a couple of arguments we want to get whenever an instance of this class is created normally we put the reference of the element by elementRef with it's TYPE) {} 
+      ```
