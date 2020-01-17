@@ -40,11 +40,11 @@ This project was generated with
         - pass an object to this decorator to configure this Directive
         - Now, How do we Configure the directive ??
               - the one thing our directive needs is a SELECTOR 
-                because we need to place our directive in our template to attach them to elements so we need to have some way to give                   angular some instructions which is through the SELECTOR which need to be unique selector.
+                because we need to place our directive in our template to attach them to elements so we need to have some way to give angular some instructions which is through the SELECTOR which need to be unique selector.
               - selector : '[appFileName]
-              - we can inject the element the directive sits on into this directive(services SECTION it is an easy way to get other                     classes without instantiating on our own)
-              - we inject them by adding a CONSTRUCTOR(here we list a couple of arguments we want to get whenever an instance of this                   class is created normally we put the reference of the element by elementRef with it's TYPE) {} 
-              - Now to be able to use this data in our class everywhere of adding PRIVATE in front of it which will make the property of                 this class
+              - we can inject the element the directive sits on into this directive(services SECTION it is an easy way to get other classes without instantiating on our own)
+              - we inject them by adding a CONSTRUCTOR(here we list a couple of arguments we want to get whenever an instance of this class is created normally we put the reference of the element by elementRef with it's TYPE) {} 
+              - Now to be able to use this data in our class everywhere of adding PRIVATE in front of it which will make the property of this class
               - Now with that we got access to the elemnet
               -  Now we can use it with our constructor and use the nativeElement and a better way than the constructor is ngOnInit
               - in ngOnInit
