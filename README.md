@@ -52,3 +52,4 @@ This project was generated with
               - Now we have to go to AppModule and in Declaration we need to declare our directive and import it there
               - Now we can use it in our app
       ```
+      
