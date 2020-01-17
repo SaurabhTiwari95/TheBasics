@@ -20,16 +20,17 @@ This project was generated with
     ```
 #### Lecture 90
 ##### Understanding Directives
-###### Attribute Directives**
+###### Attribute Directives
       ```
         - Looks like a normal attribute(possibly with databinding or event binding
         - Only affect/change the element they are added to
       ```
-###### Structural Directives**
+###### Structural Directives
       ```
         - looks like a normal attribute but have a leading *(for desugaring)
         - Affect a wholle area in the DOM(elements get added/removed)
       ```
+##### Steps to create a basic attribute directive
       ```
         - create a Folder
         - create a file
@@ -43,4 +44,11 @@ This project was generated with
               - selector : '[appFileName]
               - we can inject the element the directive sits on into this directive(services SECTION it is an easy way to get other classes without instantiating on our own)
               - we inject them by adding a CONSTRUCTOR(here we list a couple of arguments we want to get whenever an instance of this class is created normally we put the reference of the element by elementRef with it's TYPE) {} 
+              - Now to be able to use this data in our class everywhere of adding PRIVATE in front of it which will make the property of this class
+              - Now with that we got access to the elemnet
+              -  Now we can use it with our constructor and use the nativeElement and a better way than the constructor is ngOnInit
+              - in ngOnInit
+                - this.elementRef.nativeElement.style.backgroundColor= "red";
+              - Now we have to go to AppModule and in Declaration we need to declare our directive and import it there
+              - Now we can use it in our app
       ```
